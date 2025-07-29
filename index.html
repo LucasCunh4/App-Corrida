@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Meu App de Corrida</title> 
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0F3460">
+    
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+</head>
+
+
+</head>
+<body>
+
+    <header>
+        <button id="botao-menu" class="botao-menu">
+            <span></span><span></span><span></span>
+        </button>
+        <h1>Resumo</h1>
+    </header>
+
+    <nav class="menu-lateral">
+        <div class="menu-header"><h2>Menu</h2></div>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="historico.html">Histórico</a></li>
+            <li><a href="rankings.html">Rankings</a></li>
+            <li><a href="graficos.html">Gráficos</a></li>
+            <li><a href="desafios.html">Desafios</a></li>
+            <li><a href="treinador.html">Treinador Intervalado</a></li>
+        </ul>
+    </nav>
+    <div id="overlay" class="overlay"></div>
+
+    <main>
+        <section class="card-resumo-km">
+            <h2>Quilometragem</h2>
+            <div id="seletor-periodo" class="botoes-periodo">
+                <button data-periodo="semanal">Semanal</button>
+                <button data-periodo="mensal">Mensal</button>
+                <button data-periodo="total" class="ativo">Total</button>
+            </div>
+            <p class="km-total-display">0.00 km</p>
+        </section>
+
+        <section class="card-ultima-corrida">
+            <h2>Última Corrida</h2>
+            <p>Tipo: N/A</p>
+            <p>Distância: 0 km</p>
+            <p>Tempo: 0 min 0 seg</p>
+            <p>Pace Médio: 0'00" /km</p>
+        </section>
+    </main>
+
+    <a href="registrar-treino.html" class="botao-add-treino">+</a>
+    <script src="script.js"></script>
+</body>
+</html>
