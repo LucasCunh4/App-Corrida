@@ -1,0 +1,11 @@
+[build]
+  # Esta é a configuração mais importante.
+  # Diz ao Netlify para publicar o diretório raiz do seu projeto.
+  publish = "/"
+  # Diz ao Netlify que não há nenhum comando de build para rodar.
+  command = ""
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
